@@ -10,4 +10,4 @@ if [ -f "/vagrant/gerrit-2.9.2.war" ]
   wget http://gerrit-releases.storage.googleapis.com/gerrit-2.9.2.war
 fi
 java -jar gerrit-2.9.2.war init -d /srv/gerrit < gerrit.answer.file
-/srv/gerrit/bin/gerrit.sh start
+/srv/gerrit/bin/gerrit.sh restart

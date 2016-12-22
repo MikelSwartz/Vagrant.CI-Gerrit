@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
   config.vm.define "gerrit" do |gerrit|
           gerrit.vm.network "public_network", ip: "192.168.50.10", bridge: "eth0"
 	  gerrit.vm.hostname = "gerrit.test.com"
-	  gerrit.vm.network "forwarded_port", guest: 8010, host: 8020
+	  gerrit.vm.network "forwarded_port", guest: 8080, host: 8010
 	  gerrit.vm.provision "shell",
             path: "provision.sh"
   end
