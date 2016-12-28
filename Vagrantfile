@@ -6,7 +6,7 @@ Vagrant.configure("2") do |config|
     v.memory = 1024
   end
   config.vm.define "gerrit" do |gerrit|
-          gerrit.vm.box = "bmcgonigle/centos68"
+          gerrit.vm.box = "box"
 	  gerrit.vm.hostname = "gerrit.test.com"
           gerrit.vm.network :private_network, ip: "192.168.50.10", bridge: "eth0"
 	  gerrit.vm.network "forwarded_port", guest: 8080, host: 8010
