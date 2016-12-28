@@ -17,3 +17,4 @@ Comments
 ========
 Why does the "box" box not configure network correctly?
 Why does the "bmcgonigle/centos68" box not port forward correctly? 
+Need to add Jenkins for a full CI host. 
