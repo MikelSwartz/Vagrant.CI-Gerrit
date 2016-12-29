@@ -4,6 +4,7 @@ yum install -y vim git tree wget
 yum install bind-utils -y #for dig
 
 mkdir -p /root/git
+#Set MY_IP to the url of your gerrit server
 MY_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)
 
 cd /vagrant/
